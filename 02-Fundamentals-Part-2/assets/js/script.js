@@ -100,21 +100,60 @@ A variable holds value, but a function can hold one or more complete line of cod
 
 // ---------------- Reviewing Functions ----------------
 
+// const calcAge = function(birthYear){
+//     return 2022 - birthYear;
+// }
+
+// const yearsUntillRetirement = function (birthYear, firstName) {
+//     const age = calcAge(birthYear);
+//     const retirement = 60 - age;
+
+//     if (retirement >= 0) {
+//         return retirement;
+//     } else {
+//         return -1;
+//     }    
+//     // return (`${firstName} is retires in ${retirement} years.`);
+// }
+
+// console.log(yearsUntillRetirement(1993 , "Kiran"));
+// console.log(yearsUntillRetirement(1950 , "Kiran"));
+
+
+// ---------------- Arrays ----------------
+
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+// 1st Way of writing an array. this way of writing an array is called  LITERAL SYNTAX.
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+// 2nd Way of writing an array
+const years = new Array (1947, 1950, 1975, 2022);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jai";
+console.log(friends);
+
+//  Array can hold multiple data types in a single variable
+
+const firstName = "Ronith";
+const Ronnie = [firstName, "Aryan",  2050-1990,  friends];
+console.log(Ronnie);
+
+// Array Exercise
+
 const calcAge = function(birthYear){
-    return 2022 - birthYear;
+    return 2050 - birthYear;
 }
 
-const yearsUntillRetirement = function (birthYear, firstName) {
-    const age = calcAge(birthYear);
-    const retirement = 60 - age;
-
-    if (retirement >= 0) {
-        return retirement;
-    } else {
-        return -1;
-    }    
-    // return (`${firstName} is retires in ${retirement} years.`);
-}
-
-console.log(yearsUntillRetirement(1993 , "Kiran"));
-console.log(yearsUntillRetirement(1950 , "Kiran"));
+const year = [1990, 1965, 2002, 2015, 2022 ];
